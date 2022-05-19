@@ -164,20 +164,15 @@ public class SAXController extends DefaultHandler {
     }
 
     public Storage readSaxParser() {
-
         Storage storage = new Storage();
-
         SAXParserFactory factory = SAXParserFactory.newInstance();
 
         try (InputStream is = getXMLFileAsStream()) {
-
             SAXParser saxParser = factory.newSAXParser();
             // parse XML and map to object, it works, but not recommend, try JAXB
             SAXController handler = new SAXController(xmlFileName);
             XMLReader xmlReader = saxParser.getXMLReader();
-
             saxParser.parse(xmlFileName, handler);
-
             // print all
             List<Product> result = getResult();
             String output = new String("output.dom.xml");
