@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<t8:storage title="kitchen"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:t8="http://com.epam.rd.java.basic.task8"
+            xsi:schemaLocation="http://com.epam.rd.java.basic.task8 input.xsd">
+        <!-- xsi:noNamespaceSchemaLocation="input.xsd">-->
+<product>
+<id>1</id>
+<title>Apple</title>
+<note>Green</note>
+<quantity>10</quantity>
+<units>kilos</units>
+<price>10.90</price>
+</product>
+
+<product>
+<id>2</id>
+<title>Ananas</title>
+<note>Hawaii</note>
+<quantity>5</quantity>
+<units>kilos</units>
+<price>30.90</price>
+</product>
+        </t8:storage>

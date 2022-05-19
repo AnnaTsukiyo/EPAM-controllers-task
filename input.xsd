@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://com.epam.rd.java.basic.task8"
+           xmlns="http://com.epam.rd.java.basic.task8">
+
+    <xs:element name="storage">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="product" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" type="xs:positiveInteger"/>
+                            <xs:element name="title" type="xs:string"/>
+                            <xs:element name="note" type="xs:string" minOccurs="0"/>
+                            <xs:element name="quantity" type="xs:positiveInteger"/>
+                            <xs:element name="units" type="xs:string"/>
+                            <xs:element name="price" type="xs:decimal"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="title" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+
